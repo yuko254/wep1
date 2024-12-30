@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
+.title {
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 32px;
+  color: #000;
+  text-align: center;
+}
+.title::after {
+  position: absolute;
+  content: "";
+  color: #000;
+  background-color: #000;
+  width: 40px;
+  height: 4px;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.social-container a {
+  border: 1px solid #dddddd;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+.Input-box {
+  background-color: #eee;
+  border: none;
+  border-radius: 7px;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+.btn {
+  width: 75%;
+  height: 45px;
+  background: transparent;
+  outline: none;
+  border: 2px solid #000;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  cursor: pointer;
+  transition: transform 80ms;
+  transition: box-shadow 0.5s;
+  margin-top: 10px;
+}
+.btn:hover {
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.8);
+}
+button:active {
+  transform: scale(0.95);
+}
+
+.link {
+  font-size: 14px;
+  margin: 20px 0 10px;
+}
+.link a {
+  color: rgb(79, 129, 154);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.SignContainer {
+  border-radius: 10px;
+  box-shadow: 0 0 25px #000;
+  position: relative;
+  width: 384px;
+  height: 480px;
+  overflow: hidden;
+}
+
+.form-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 60px 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.signin-form-container {
+  opacity: 1;
+  pointer-events: all;
+}
+.signup-form-container {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.blueLayer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top right,
+    rgb(21, 231, 221),
+    rgb(68, 87, 214)
+  );
+}
+
+.rotate-active .signin-form-container {
+  opacity: 0;
+  pointer-events: none;
+}
+.rotate-active .signup-form-container {
+  opacity: 1;
+  pointer-events: all;
+}

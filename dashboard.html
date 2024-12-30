@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="dashboard.css"> 
+    <link rel="stylesheet" href="modall.css" />
+</head>
+  <body>
+    <header id="app-header"></header>
+    <script async src="header.js"></script>
+    <div id="modal" class="modal"></div>
+    <script async src="modall.js"></script>
+    <div class="centre-container">
+      <div class="productslist">
+        <button>Add a new product</button>
+        <div class="upper-bar">
+            <span>Recently added/modified :&nbsp</span>
+            <input type="search"><button>SEARCH</button><span>&nbsp</span><a href="dashboard-list.html"><button>View all</button></a>
+        </div>
+        <table>
+          <tr>
+            <th>Product</th>
+            <th>Added on</th>
+            <th>Last modified</th>
+            <th>Price</th>
+            <th>Edit</th>
+            <th>Remove</th>
+          </tr>
+          <tr>
+            <td>lap</td>
+            <td>date</td>
+            <th>date</td>
+            <td>Price</td>
+            <td><button>#</button></td>
+            <td><button>#</button></td>
+          </tr>
+          <tr>
+            <td>lap</td>
+            <td>date</td>
+            <th>date</td>
+            <td>Price</td>
+            <td><button>#</button></td>
+            <td><button>#</button></td>
+          </tr>
+        </table>
+      </div>
+      <div class="allproductlist"></div>
+      <div class="add/edit-form">
+        <fieldset>
+        <legend>add/edit form</legend>
+        <form action="#">
+          <label>Product :&nbsp</label><input type="text" required /><br>
+          <label>product description :&nbsp</label><br><textarea cols="20" rows="10" required></textarea><br>
+          <label>product price :&nbsp</label><input type="number" required /><br>
+          <label>product specs :&nbsp</label><br>
+          <label>CPU :&nbsp</label><input type="text" required /><br>
+          <label>GPU :&nbsp</label><input type="text" required /><br>
+          <label>Memory :&nbsp</label><input type="text" required /><br>
+          <label>Storage :&nbsp</label><input type="text" required /><br>
+          <label>Special notes :&nbsp</label></label><br><textarea cols="15" rows="10" required></textarea><br>
+          <input type="reset"><span>&nbsp</span><input type="submit">
+        </form>
+        </fieldset>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,261 @@
+body {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: rgb(16, 173, 212);
+  position: relative;
+}
+#website-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  height: 300px;
+  background-image: url(images/dark-background-gradient-geometric-shapes_23-2148431520.jpg);
+  background-size: hover;
+  box-shadow: inset 0px 0px 20px #4242425f;
+}
+
+#intro-title1,
+#intro-title2 {
+  margin-left: 20px;
+  font-family: roboto, arial;
+  color: white;
+}
+
+#intro-title1 {
+  font-size: 40px;
+  margin: 70px 0px 10px;
+}
+
+#intro-title2 {
+  font-size: 18px;
+  margin-left: 4px;
+  color: #ffffff;
+}
+
+.recommended-products-outer-section {}
+
+.products-list-title {
+  display: inline-block;
+  color: #10add4;
+  margin-left: 20px;
+  font-family: roboto, arial;
+  font-size: 30px;
+  margin-bottom: 10px;
+  background-color: white;
+  padding: 2px 6px;
+}
+
+.recommended-products-inner-section {
+  height: 400px;
+  display: flex;
+  padding-right: 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: inset 0px 0px 30px #09536683;
+}
+
+.product-description {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #10add4;
+  width: 240px;
+  height: 360px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-left: 20px;
+  border-width: 2px;
+  border-style: unset;
+  border-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 5px rgba(46, 46, 46, 0.246);
+}
+
+.product-pic-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-top: 8px;
+  height: 200px;
+  background-color: #fffffff7;
+  position: relative;
+}
+
+.product-description-hover-p {
+  position: absolute;
+  font-family: roboto, arial;
+  font-size: 22px;
+  color: #1286a3;
+  text-shadow: 0px 0px 10px #ffffff;
+  opacity: 0;
+  transition: opacity 0.1ms;
+}
+
+.product-description:hover {
+  box-shadow: 0px 0px 20px #58959544;
+}
+
+.product-description:hover .product-pic-section .product-description-hover-p {
+  text-shadow: 0px 0px 1px rgb(255, 255, 255);
+  opacity: 1;
+}
+
+.product-description:hover .product-description-details-section .product-name {
+  text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.877);
+}
+
+.product-pic {
+  width: 220px;
+}
+
+.product-description-details-section {
+  padding-left: 4px;
+}
+
+.product-description-details-section p {
+  font-family: roboto, arial;
+
+}
+
+.product-name {
+  font-size: 18px;
+  color: white;
+}
+
+.product-price {
+  color: rgb(12, 97, 105);
+  font-size: 18px;
+}
+
+.product-company {
+  color: rgb(180, 180, 180);
+
+  font-size: large;
+}
+
+#categories-list-p,#brands-list-p{
+  display: inline-block;
+  color: #10add4;
+  margin-left: 20px;
+  font-family: roboto, arial;
+  font-size: 30px;
+  margin-bottom: 10px;
+  background-color: white;
+  padding: 2px 6px;
+}
+#categories-list-inner-section {
+  height: 190px;
+  display: flex;
+  padding-right: 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #10add4;
+}
+
+.category-button{
+border-color: white;
+border-style:none;
+height: 180px;
+width: 180px;
+border-radius: 90px;
+margin-left: 20px;
+font-family: roboto,arial;
+font-size: 24px;
+color: #0a5b6f;
+text-shadow: 0px 0px 2px #ffffff;
+background-size:140px auto;
+background-repeat: no-repeat;
+background-position:center;
+box-shadow: 0px 0px 5px rgba(233, 233, 233, 0.579);
+background-color: rgb(251, 251, 251);
+}
+#category-1{
+  background-image: url(images/lightweight-laptop.webp);
+}
+#category-2{
+  background-image: url(images/notebook-laptop.webp);
+}
+#category-3{
+  background-image: url(images/chromebook-laptop.webp);
+}
+#category-4{
+  background-image: url(images/macbook-laptop.webp);
+}
+#category-5{
+  background-image: url(images/gaming-laptop.webp);
+}
+.categories-list-hr{
+  color: #000;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.733);
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.551);
+}
+#brands-list-inner-section {
+  height: 110px;
+  display: flex;
+  padding-right: 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #10add4;
+}
+.brand-button{
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  width: 90px;
+  border-radius: 45px;
+  border: solid;
+  border-width: 3px;
+  border-color: #ffffff;
+box-shadow: 0px 0px 5px rgba(233, 233, 233, 0.579);
+background-color: rgb(251, 251, 251);
+overflow: hidden;
+}
+.brand-button img{
+  object-fit:scale-down;
+  height: 90%;
+  object-position: center;
+}
+#brands-list-outer-section{
+  margin-top: 10px;
+}
+footer{
+margin-bottom: -10px;
+padding-top: 6px;
+background-color: #505456;
+box-shadow: inset -0px -2px 6px #000000a7;
+}
+footer h3,footer p{
+  font-family: roboto,arial;
+  color: #ffffff;
+  font-size: larger;
+}
+.bottom-bar{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color:#2b2f31;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  box-shadow: -0px -2px 2px #0000006e;
+}
+.bottom-bar p{
+margin: 6px;
+color: #ffffff;
+font-family: roboto,arial;
+}
+main{
+  padding-bottom: 20px;
+  margin-bottom: -10px;
+}
+.social button img{
+  border-radius: 6px;
+}
