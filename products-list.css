@@ -1,25 +1,32 @@
+body {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+main {
+  padding-top: 60px;
+}
 .laptop-container {
   display: grid;
-  grid-template-columns: repeat(5,200px);
+  grid-template-columns: repeat(5, 200px);
   justify-content: space-around;
   gap: 20px;
 }
-@media(max-width:800px) {
-  .laptop-container{
-  grid-template-columns: repeat(3,200px);
+@media (max-width: 800px) {
+  .laptop-container {
+    grid-template-columns: repeat(3, 200px);
   }
 }
-@media(max-width:600px) {
-  .laptop-container{
-  grid-template-columns: repeat(2,200px);
+@media (max-width: 600px) {
+  .laptop-container {
+    grid-template-columns: repeat(2, 200px);
   }
 }
-@media(max-width:400px) {
-  .laptop-container{
-  grid-template-columns: repeat(1,200px);
+@media (max-width: 400px) {
+  .laptop-container {
+    grid-template-columns: repeat(1, 200px);
   }
 }
-
 
 .product-description {
   display: inline-block;
@@ -70,7 +77,6 @@
   text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.586);
 }
 
-
 .product-description-details-section {
   padding-left: 4px;
 }
@@ -78,11 +84,10 @@
 .product-description-details-section p {
   font-family: roboto, arial;
   margin: 8px;
-
 }
 
 .product-name {
-  font-weight:600;
+  font-weight: 600;
   font-size: 16px;
   color: white;
 }
@@ -95,9 +100,6 @@
 .product-company {
   color: rgb(3, 26, 43);
   font-size: 16px;
-}
-body {
-  padding-top: 100px;
 }
 
 /* #brands-list-inner-section {
@@ -136,22 +138,25 @@ body {
   margin-top: 10px;
 } */
 
-
-.product-pic{
+.product-pic {
   width: 90%;
 }
-.product-processor,.product-storage,.product-memory{
+.product-processor,
+.product-storage,
+.product-memory {
   opacity: 1;
   font-size: 14px;
-  color:rgb(239, 239, 239)
+  color: rgb(239, 239, 239);
 }
-.product-storage,.product-memory{
+.product-storage,
+.product-memory {
   opacity: 0;
 }
-.product-description:hover .product-description-details-section
-.product-storage
-,
-.product-description:hover .product-description-details-section
-.product-memory{
+.product-description:hover
+  .product-description-details-section
+  .product-storage,
+.product-description:hover
+  .product-description-details-section
+  .product-memory {
   opacity: 1;
 }

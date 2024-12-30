@@ -1,4 +1,9 @@
 body {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+main {
   padding-top: 60px;
 }
 .laptop-container {
@@ -46,8 +51,8 @@ body {
   align-items: center;
   border-left: 1px solid rgb(181, 181, 181);
 }
-.select-product {
-}
+/* .select-product {} */
+
 .product-description {
   display: flex;
   justify-content: space-between;
